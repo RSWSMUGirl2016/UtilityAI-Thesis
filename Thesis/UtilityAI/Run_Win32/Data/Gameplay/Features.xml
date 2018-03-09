@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Features>
+	<FeatureDefinition type="chest" subtype="" issolid="true" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="?"/>
+	<FeatureDefinition type="pressure plate" subtype="" issolid="false" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="^"/>
+  <FeatureDefinition type="front door" subtype="" issolid="false" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="+"/>
+  <FeatureDefinition type="back door" subtype="" issolid="false" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="-"/>
+  <FeatureDefinition type="teleport" subtype="" issolid="false" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="["/>
+  <FeatureDefinition type="pit" subtype="" issolid="false" fillcolor="153, 102, 0, 255" glyphcolor="255,255,0,255" glyph="{"/>
+</Features>	

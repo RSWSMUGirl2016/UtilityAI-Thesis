@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<IndividualGoals>
+  <IndividualGoal name="house" resources_needed="3,wood_2,stone"/>
+  <IndividualGoal name="" resources_needed="3,wood_2,stone"/>
+  
+</IndividualGoals>

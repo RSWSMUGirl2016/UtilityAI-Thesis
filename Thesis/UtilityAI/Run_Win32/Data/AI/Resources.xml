@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Resources>
+  <ResourceDefinition name="water"  weight="2.5" type="water"      element="water"      uses="25"/>
+  <ResourceDefinition name="rock"   weight="5"   type="craftable"  element="rock"       uses="1"/>
+  <ResourceDefinition name="wood"   weight="5"   type="craftable"  element="wood"       uses="1"/>
+  <ResourceDefinition name="rope"   weight="5"   type="craftable"  element="rope"       uses="1"/>
+  <ResourceDefinition name="food"   weight="2.5" type="food"       element="food"       uses="25"/>
+  <ResourceDefinition name="metal"  weight="5"   type="craftable"  element="metal"      uses="1"/>
+  <ResourceDefinition name="axe"    weight="15"  type="protection" element="wood,metal" uses="1"/>
+  <ResourceDefinition name="sword"  weight="20"  type="protection" element="wood,metal" uses="5"/>
+  <ResourceDefinition name="shield" weight="25"  type="protection" element="wood,metal" uses="10"/>
+</Resources>

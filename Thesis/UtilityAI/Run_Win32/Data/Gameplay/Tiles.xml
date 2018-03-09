@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Tiles>
+	<TileDefinition tiletype="grass"           solid="false" fillcolor="50,125,0,255_0,153,0,255_51,102,0,255"           glyphcolor="0,0,0,255"       glyph="+"/>
+	<TileDefinition tiletype="stone"           solid="true"  fillcolor="175,175,175,255_128,128,128,255_64,64,64,255"    glyphcolor="0,0,0,255"       glyph="#"/>
+  <TileDefinition tiletype="water"           solid="true"  fillcolor="0,102,255,255_128,179,255,255_0,61,153,255"      glyphcolor="255,255,255,255" glyph="~"/>
+  <TileDefinition tiletype="dirt"            solid="false" fillcolor="204,153,0,255_153,115,0,255_255,191,0,255"       glyphcolor="255,255,255,255" glyph="."/>
+  <TileDefinition tiletype="wood"            solid="false" fillcolor="102,51,0,255_153,102,51,255_51,34,0,255"         glyphcolor="255,255,255,255" glyph="|"/>
+  <TileDefinition tiletype="metal"           solid="false" fillcolor="75,0,130,255_128,0,128,255_153,50,204,255"       glyphcolor="255,255,255,255" glyph="*"/>
+  <TileDefinition tiletype="rock"            solid="false" fillcolor="211,211,211,255_192,192,192,255_169,169,169,255" glyphcolor="255,255,255,255" glyph=";"/>
+  <TileDefinition tiletype="food"            solid="false" fillcolor="205,50,51,255_144,35,36,255_164,40,41,255"       glyphcolor="255,255,255,255" glyph="{"/>
+  <TileDefinition tiletype="animal"          solid="false" fillcolor="255,30,154,255_234,0,129,255_168,0,92,255" glyphcolor="255,255,255,255" glyph="@"/>
+  <TileDefinition tiletype="house"           solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="food_storage"    solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="water_pipe"      solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="well"            solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="rock_mine"       solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="metal_mine"      solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+  <TileDefinition tiletype="farm"            solid="false" fillcolor="24,24,24,255_40,40,40,255_56,56,56,255"          glyphcolor="255,255,255,255" glyph="_"/>
+</Tiles>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Loot>
+	<LootDefinition name="misc" items="potion" actors="goblin"/>
+	<LootDefinition name="defense" items="armor" actors="ogre"/>
+	<LootDefinition name="weapon" items="dagger" actors="goblin"/>
+</Loot>

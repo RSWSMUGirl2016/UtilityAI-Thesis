@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<WorldMaps>
+  <MapDefinition name="test file map">
+    <Generators>
+      <Generator genName="fromfile" permanence="1.0">
+        <Info offsetx="7" offsety="5" ismirrored="false" rotation="180"/>
+        <Legend floors="~" walls="#" floors="."/>
+        <MapRows numrows="10" numcolumns="10">
+          <MapRow index="9" row="~~~##########"/>
+          <MapRow index="8" row="~~~#.......##"/>
+          <MapRow index="7" row="~~~#.g......#"/>
+          <MapRow index="6" row="~~~#......#.#"/>
+          <MapRow index="5" row="~~~#.....#..#"/>
+          <MapRow index="4" row="~~~####.#.o.#"/>
+          <MapRow index="3" row="~~~#....#...#"/>
+          <MapRow index="2" row="~~~#.....#..#"/>
+          <MapRow index="1" row="~~~#@.....#.#"/>
+          <MapRow index="0" row="~~~##########"/>
+        </MapRows>
+      </Generator>
+    </Generators>
+  </MapDefinition>
+</WorldMaps>

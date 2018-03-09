@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<Maps>
+  <MapDefinition name="utility ai map">
+    <Generators>
+      <Generator genName="fromfile" permanence="1.0">
+        <Info offsetx="0" offsety="0" ismirrored="false" rotation="0" isperlin="false"/>
+        <Legend walls="#,~" floors=".,+,|,*,;,{,@" entities=""/>
+        <Locations>
+          <Location name="well"          locationkey="0" health="250.0f" worldlocation="32,8"  size="3,3"/>
+          <Location name="farm"          locationkey="1" health="100.0f" worldlocation="42,10" size="6,4"/>
+          <Location name="house"         locationkey="2" health="200.0f" worldlocation="21,11" size="6,3"/>
+          <Location name="pipe"          locationkey="3" health="50.0f"  worldlocation="5,5"   size="20,0"/>
+          <Location name="foodStorage"   locationkey="4" health="175.0f" worldlocation="38,5"  size="7,4"/>
+          <Location name="hut"           locationkey="5" health="50.0f"  worldlocation="22,12" size="3,2"/>
+          <Location name="rockmine"      locationkey="6" health="300.0f" worldlocation="55,5"  size="5,3"/>
+          <Location name="metalmine"     locationkey="7" health="300.0f" worldlocation="36,1"  size="6,3"/>
+        </Locations>
+        <MapRows numrows="19" numcolumns="65">
+          <MapRow index="18" row="~~~~~++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"/>
+          <MapRow index="17" row="~~~~~+++++++++++++++++++++++++@@@@@@@@@@++++++++++++++{{{{{{{{{{+"/>
+          <MapRow index="16" row="~~~~~+++++++++++++++++++++++++@@@@@@@@@@++++++++++++++{{{{{{{{{{+"/>
+          <MapRow index="15" row="~~~~~+++++++++++++++++++++++++++++++++++++++++++++++++{{{{{{{{{{+"/>
+          <MapRow index="14" row="~~~~~+++++++++++++++++++++++++++++++++++++++++++++++++{{{{{{{{{{+"/>
+          <MapRow index="13" row="~~~~~+++++++++++++++..............................+++++++++++++++"/>
+          <MapRow index="12" row="~~~~~+++|||||||||+++..............................+++++++++++++++"/>
+          <MapRow index="11" row="~~~~~+++|||||||||+++..............................+++++++++++++++"/>
+          <MapRow index="10" row="~~~~~+++|||||||||+++..............................+++++;;;;;+++++"/>
+          <MapRow index="9"  row="~~~~~+++|||||||||+++..............................+++++;;;;;+++++"/>
+          <MapRow index="8"  row="~~~~~+++|||||||||+++..............................+++++;;;;;+++++"/>
+          <MapRow index="7"  row="~~~~~+++|||||||||+++..............................+++++++++++++++"/>
+          <MapRow index="6"  row="~~~~~+++++++++++++++..............................+++++++++++++++"/>
+          <MapRow index="5"  row="~~~~~+++++++++++++++..............................+++++++++++++++"/>
+          <MapRow index="4"  row="~~~~~++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"/>
+          <MapRow index="3"  row="~~~~~++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"/>
+          <MapRow index="2"  row="~~~~~++++++++++++++++++**********++++++++++++++++++++++++++++++++"/>
+          <MapRow index="1"  row="~~~~~++++++++++++++++++**********++++++++++++++++++++++++++++++++"/>
+          <MapRow index="0"  row="~~~~~++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"/>
+        </MapRows>
+      </Generator>
+    </Generators>
+  </MapDefinition>
+  <MapDefinition name="perlin map - little food - one">
+    <Generators>
+      <Generator genName="fromfile" permanence="1.0">
+        <Info offsetx="0" offsety="0" ismirrored="false" rotation="0" isperlin="true"/>
+        <Legend walls="#,~" floors=".,+,|,*,;,{,@" entities=""/>
+        <Locations>
+          <Location name="well"          locationkey="0" health="250.0f" size="3,3"/>
+          <Location name="farm"          locationkey="1" health="100.0f" size="6,4"/>
+          <Location name="house"         locationkey="2" health="200.0f" size="6,3"/>
+          <Location name="pipe"          locationkey="3" health="50.0f"  size="20,0"/>
+          <Location name="foodStorage"   locationkey="4" health="175.0f" size="7,4"/>
+          <Location name="hut"           locationkey="5" health="50.0f"  size="3,2"/>
+          <Location name="rockmine"      locationkey="6" health="300.0f" size="5,3"/>
+          <Location name="metalmine"     locationkey="7" health="300.0f" size="6,3"/>
+        </Locations>
+        <PerlinLayersData>
+          <PerlinLayerData layername="grass"  scale="1.0"  numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="-1.0"/>>
+          <PerlinLayerData layername="dirt"   scale="10.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="1" noisethreshold="0.0"/>>          
+          <PerlinLayerData layername="food"   scale="15.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.7"/>>                                                           
+          <PerlinLayerData layername="animal" scale="15.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.75"/>>          
+          <PerlinLayerData layername="wood"   scale="17.5" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.6"/>>          
+          <PerlinLayerData layername="rock"   scale="15.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.75"/>>          
+          <PerlinLayerData layername="metal"  scale="7.0"  numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.65"/>>          
+          <PerlinLayerData layername="water"  scale="12.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="0.45"/>>
+        </PerlinLayersData>
+        <MapRows numrows="19" numcolumns="65">
+          <MapRow index="18" row="#################################################################"/>
+          <MapRow index="17" row="#################################################################"/>
+          <MapRow index="16" row="#################################################################"/>
+          <MapRow index="15" row="#################################################################"/>
+          <MapRow index="14" row="#################################################################"/>
+          <MapRow index="13" row="#################################################################"/>
+          <MapRow index="12" row="#################################################################"/>
+          <MapRow index="11" row="#################################################################"/>
+          <MapRow index="10" row="#################################################################"/>
+          <MapRow index="9"  row="#################################################################"/>
+          <MapRow index="8"  row="#################################################################"/>
+          <MapRow index="7"  row="#################################################################"/>
+          <MapRow index="6"  row="#################################################################"/>
+          <MapRow index="5"  row="#################################################################"/>
+          <MapRow index="4"  row="#################################################################"/>
+          <MapRow index="3"  row="#################################################################"/>
+          <MapRow index="2"  row="#################################################################"/>
+          <MapRow index="1"  row="#################################################################"/>
+          <MapRow index="0"  row="#################################################################"/>
+        </MapRows>
+      </Generator>
+    </Generators>
+  </MapDefinition>
+  <MapDefinition name="perlin map - little water - one">
+    <Generators>
+      <Generator genName="fromfile" permanence="1.0">
+        <Info offsetx="0" offsety="0" ismirrored="false" rotation="0" isperlin="true"/>
+        <Legend walls="#,~" floors=".,+,|,*,;,{,@" entities=""/>
+        <Locations>
+          <Location name="well"          locationkey="0" health="250.0f" size="3,3"/>
+          <Location name="farm"          locationkey="1" health="100.0f" size="6,4"/>
+          <Location name="house"         locationkey="2" health="200.0f" size="6,3"/>
+          <Location name="pipe"          locationkey="3" health="50.0f"  size="20,0"/>
+          <Location name="foodStorage"   locationkey="4" health="175.0f" size="7,4"/>
+          <Location name="hut"           locationkey="5" health="50.0f"  size="3,2"/>
+          <Location name="rockmine"      locationkey="6" health="300.0f" size="5,3"/>
+          <Location name="metalmine"     locationkey="7" health="300.0f" size="6,3"/>
+        </Locations>
+        <PerlinLayersData>
+          <PerlinLayerData layername="dirt"   scale="1.0"  numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="-1.0"/>>
+          <PerlinLayerData layername="food"   scale="10.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="1" noisethreshold="0.5"/>>
+          <PerlinLayerData layername="animal" scale="15.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="4" noisethreshold="0.75"/>>
+          <PerlinLayerData layername="wood"   scale="20.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="5" noisethreshold="0.75"/>>
+          <PerlinLayerData layername="rock"   scale="15.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="3" noisethreshold="0.5"/>>
+          <PerlinLayerData layername="metal"  scale="20.0" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="2" noisethreshold="0.75"/>>
+        </PerlinLayersData>
+        <MapRows numrows="19" numcolumns="65">
+          <MapRow index="18" row="#################################################################"/>
+          <MapRow index="17" row="#################################################################"/>
+          <MapRow index="16" row="#################################################################"/>
+          <MapRow index="15" row="#################################################################"/>
+          <MapRow index="14" row="#################################################################"/>
+          <MapRow index="13" row="#################################################################"/>
+          <MapRow index="12" row="#################################################################"/>
+          <MapRow index="11" row="#################################################################"/>
+          <MapRow index="10" row="#################################################################"/>
+          <MapRow index="9"  row="#################################################################"/>
+          <MapRow index="8"  row="#################################################################"/>
+          <MapRow index="7"  row="#################################################################"/>
+          <MapRow index="6"  row="#################################################################"/>
+          <MapRow index="5"  row="#################################################################"/>
+          <MapRow index="4"  row="#################################################################"/>
+          <MapRow index="3"  row="#################################################################"/>
+          <MapRow index="2"  row="#################################################################"/>
+          <MapRow index="1"  row="#################################################################"/>
+          <MapRow index="0"  row="#################################################################"/>
+        </MapRows>
+      </Generator>
+    </Generators>
+  </MapDefinition>
+    <MapDefinition name="perlin map - no resources - one">
+    <Generators>
+      <Generator genName="fromfile" permanence="1.0">
+        <Info offsetx="0" offsety="0" ismirrored="false" rotation="0" isperlin="true"/>
+        <Legend walls="#,~" floors=".,+,|,*,;,{,@" entities=""/>
+        <Locations>
+          <Location name="well"          locationkey="0" health="250.0f" size="4,4"/>
+          <Location name="farm"          locationkey="1" health="100.0f" size="6,4"/>
+          <Location name="house"         locationkey="2" health="200.0f" size="6,3"/>
+          <Location name="pipe"          locationkey="3" health="50.0f"  size="20,0"/>
+          <Location name="foodStorage"   locationkey="4" health="175.0f" size="7,4"/>
+          <Location name="hut"           locationkey="5" health="50.0f"  size="3,2"/>
+          <Location name="rockmine"      locationkey="6" health="300.0f" size="7,5"/>
+          <Location name="metalmine"     locationkey="7" health="300.0f" size="7,5"/>
+        </Locations>
+        <PerlinLayersData>
+          <PerlinLayerData layername="dirt"   scale="1.0"  numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="0" noisethreshold="-1.0"/>>
+          <PerlinLayerData layername="grass"  scale="7.5" numoctaves="1" octavepersistence="0.5" octavescale="2.0" renormalize="true" seed="1" noisethreshold="0.0"/>>
+        </PerlinLayersData>
+        <MapRows numrows="19" numcolumns="65">
+          <MapRow index="18" row="#################################################################"/>
+          <MapRow index="17" row="#################################################################"/>
+          <MapRow index="16" row="#################################################################"/>
+          <MapRow index="15" row="#################################################################"/>
+          <MapRow index="14" row="#################################################################"/>
+          <MapRow index="13" row="#################################################################"/>
+          <MapRow index="12" row="#################################################################"/>
+          <MapRow index="11" row="#################################################################"/>
+          <MapRow index="10" row="#################################################################"/>
+          <MapRow index="9"  row="#################################################################"/>
+          <MapRow index="8"  row="#################################################################"/>
+          <MapRow index="7"  row="#################################################################"/>
+          <MapRow index="6"  row="#################################################################"/>
+          <MapRow index="5"  row="#################################################################"/>
+          <MapRow index="4"  row="#################################################################"/>
+          <MapRow index="3"  row="#################################################################"/>
+          <MapRow index="2"  row="#################################################################"/>
+          <MapRow index="1"  row="#################################################################"/>
+          <MapRow index="0"  row="#################################################################"/>
+        </MapRows>
+      </Generator>
+    </Generators>
+  </MapDefinition>
+</Maps>

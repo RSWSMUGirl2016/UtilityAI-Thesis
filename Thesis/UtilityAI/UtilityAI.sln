@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UtilityAI", "Code\Game\Game.vcxproj", "{B05DE989-1108-4614-8223-684ABA3AE7E0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "..\..\Engine\Code\Engine\Engine.vcxproj", "{85631FE2-C416-4954-BD9B-E9B679A79FF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FE34ACE-60B7-4026-BBFE-F0D86405FC19}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.txt = ReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gameplay", "Gameplay", "{2B7F4C51-3B58-46E4-9ED3-0817232445C2}"
+	ProjectSection(SolutionItems) = preProject
+		Run_Win32\Data\Gameplay\Actors.xml = Run_Win32\Data\Gameplay\Actors.xml
+		Run_Win32\Data\Gameplay\Adventures.xml = Run_Win32\Data\Gameplay\Adventures.xml
+		Run_Win32\Data\Gameplay\Features.xml = Run_Win32\Data\Gameplay\Features.xml
+		Run_Win32\Data\Gameplay\Items.xml = Run_Win32\Data\Gameplay\Items.xml
+		Run_Win32\Data\Gameplay\Loot.xml = Run_Win32\Data\Gameplay\Loot.xml
+		Run_Win32\Data\Gameplay\Maps.xml = Run_Win32\Data\Gameplay\Maps.xml
+		Run_Win32\Data\Gameplay\Tiles.xml = Run_Win32\Data\Gameplay\Tiles.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AI", "AI", "{48F39BE5-3677-43D4-B817-0C6FA6830D61}"
+	ProjectSection(SolutionItems) = preProject
+		Run_Win32\Data\AI\CommunityGoals.xml = Run_Win32\Data\AI\CommunityGoals.xml
+		Run_Win32\Data\AI\IndividualGoals.xml = Run_Win32\Data\AI\IndividualGoals.xml
+		Run_Win32\Data\AI\Resources.xml = Run_Win32\Data\AI\Resources.xml
+		Run_Win32\Data\AI\WorldMap.xml = Run_Win32\Data\AI\WorldMap.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Debug|x64.ActiveCfg = Debug|x64
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Debug|x64.Build.0 = Debug|x64
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Debug|x86.ActiveCfg = Debug|Win32
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Debug|x86.Build.0 = Debug|Win32
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Release|x64.ActiveCfg = Release|x64
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Release|x64.Build.0 = Release|x64
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Release|x86.ActiveCfg = Release|Win32
+		{B05DE989-1108-4614-8223-684ABA3AE7E0}.Release|x86.Build.0 = Release|Win32
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Debug|x64.ActiveCfg = Debug|x64
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Debug|x64.Build.0 = Debug|x64
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Debug|x86.ActiveCfg = Debug|Win32
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Debug|x86.Build.0 = Debug|Win32
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Release|x64.ActiveCfg = Release|x64
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Release|x64.Build.0 = Release|x64
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Release|x86.ActiveCfg = Release|Win32
+		{85631FE2-C416-4954-BD9B-E9B679A79FF8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2B7F4C51-3B58-46E4-9ED3-0817232445C2} = {3FE34ACE-60B7-4026-BBFE-F0D86405FC19}
+		{48F39BE5-3677-43D4-B817-0C6FA6830D61} = {3FE34ACE-60B7-4026-BBFE-F0D86405FC19}
+	EndGlobalSection
+EndGlobal

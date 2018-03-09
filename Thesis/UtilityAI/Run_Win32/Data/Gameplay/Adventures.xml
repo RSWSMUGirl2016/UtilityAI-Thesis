@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Adventures>
+	<AdventureDefinition name="Test Adventure #1" title="Test Adventure #1">
+    <StartConditions startMap="test random map" startTileType="grass"/>
+    <VictoryConditions numPuzzlesSolves="2"/>
+    <Maps>
+      <Map mapName="test random map" mapDefinition="test random map">
+        <Exit type="front door" destinationMap="adventure map 1" createDestinationFeature="back door"/>
+        <Puzzle puzzleType="pressure plate" puzzleName="solve order of plates" numberOfFeatures="3" solvedOrderForPuzzle="1,2,3" numTurnsToSolve="200"/>
+      </Map>
+      <Map mapName="adventure map 1" mapDefinition="adventure map 1">
+        <Exit type="none" destinationMap="none" createDestinationFeature="none"/>
+        <Puzzle puzzleType="pressure plate" puzzleName="solve order of plates" numberOfFeatures="2" solvedOrderForPuzzle="2,1" numTurnsToSolve="300"/>
+      </Map>
+    </Maps>
+  </AdventureDefinition>
+</Adventures>

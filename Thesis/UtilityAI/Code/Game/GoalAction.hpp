@@ -1,0 +1,55 @@
+#pragma once
+
+#include <functional>
+
+class Agent;
+
+enum ActionKey
+{
+    ACTION_KEY_TEST,
+    ACTION_KEY_GENERAL_ONE,
+    ACTION_KEY_WATER_ONE,
+    ACTION_KEY_WATER_TWO,
+    ACTION_KEY_WATER_THREE,
+    ACTION_KEY_FOOD_ONE,
+    ACTION_KEY_FOOD_TWO,
+    ACTION_KEY_FOOD_THREE,
+    ACTION_KEY_SHELTER_ONE,
+    ACTION_KEY_SHELTER_TWO,
+    ACTION_KEY_SHELTER_THREE,
+    ACTION_KEY_SHELTER_FOUR,
+    ACTION_KEY_SHELTER_FIVE,
+    ACTION_KEY_SHELTER_SIX,
+    ACTION_KEY_PROTECTION_ONE,
+    ACTION_KEY_PROTECTION_TWO,
+    ACTION_KEY_PROTECTION_THREE,
+    ACTION_KEY_PROTECTION_FOUR,
+    ACTION_KEY_PROTECTION_FIVE,
+    ACTION_KEY_SHELTER_SEVEN,
+    ACTION_KEY_SHELTER_EIGHT,
+    ACTION_KEY_SHELTER_NINE,
+    ACTION_KEY_SHELTER_TEN,
+    ACTION_KEY_WATER_FOUR,
+    ACTION_kEY_REPRODUCE_ONE,
+    ACTION_KEY_FOOD_FOUR,
+    ACTION_KEY_FOOD_FIVE,
+    ACTION_KEY_FOOD_SIX,
+    ACTION_KEY_WATER_FIVE,
+    ACTION_KEY_PROTECTION_SIX,
+    ACTION_KEY_PROTECTION_SEVEN,
+    ACTION_KEY_FOOD_SEVEN,
+    ACTION_KEY_GENERAL_TWO,
+    ACTION_KEY_GENERAL_THREE,
+};
+
+class GoalAction
+{
+public:
+    ActionKey m_actionKey;
+    std::function<bool(Agent*)> m_functionCompleteAction;
+
+public:
+    void SetFunctionToCompleteAction(std::function<bool(Agent*)> const &callback);
+    void RunFunctionToCompleteAction();
+    std::string GetCurrentGoalActionName();
+};

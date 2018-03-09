@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Actors>
+	<ActorDefinition name="player" health="100" defense="100" damage="50" fillcolor="255,255,255,255" glyphcolor="255,255,255,255" glyph="@" faction="player" totalweight="100">
+		<Behaviors>
+			<Behavior type="none" steps="0"/>
+		</Behaviors>	
+	</ActorDefinition>
+	<ActorDefinition name="goblin" health="100" defense="10" damage="5" fillcolor="255,255,255,255" glyphcolor="200,25,0,255" glyph="g" faction="ogroid" totalweight="100">	
+		<Behaviors>
+			<Behavior type="wander" steps="10"/>
+			<Behavior type="pursue" steps="6"/>
+			<Behavior type="flee" steps="20"/>
+			<Behavior type="attack" range="1"/>
+		</Behaviors>	
+	</ActorDefinition>
+	<ActorDefinition name="ogre" health="100" defense="20" damage="40" fillcolor="255,255,255,255" glyphcolor="150,150,0,255" glyph="o" faction="ogroid" totalweight="100">
+		<Behaviors>
+			<Behavior type="wander" steps="10"/>
+			<Behavior type="pursue" steps="6"/>
+			<Behavior type="flee" steps="20"/>
+			<Behavior type="attack" range="1"/>
+		</Behaviors>	
+	</ActorDefinition>
+</Actors>
